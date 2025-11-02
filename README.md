@@ -45,13 +45,13 @@ A compact frontend demo implementing role-based user management with plain HTML,
 - At least one special character
 
 ## Important file locations (quick edits)
-- `app.js`
+- `script.js`
   - `seedAdminIfNeeded()` — change seeded admin credentials
   - `PW_REGEX` — change password policy
   - `USERS_KEY`, `SESSION_KEY` — localStorage keys
   - `createUser()` / `verifyCredentials()` / `deleteUser()` — user operations
   - `renderAdmin()` — Admin UI and user table logic
-- `styles.css` — theme colors and layout variables (`--accent`, `--primary`)
+- `style.css` — theme colors and layout variables (`--accent`, `--primary`)
 - `index.html` — DOM anchors: `#app`, `#sideNav`, `#nav`, `#confirmModal`, `#toastContainer`
 
 ## Demo checklist (for presentation)
