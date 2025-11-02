@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RBAC User Management — Frontend Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app-root" class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <svg class="logo" viewBox="0 0 24 24" width="28" height="28" aria-hidden>
+            <path fill="#ffffff" d="M12 2L2 7v10l10 5 10-5V7z"></path>
+          </svg>
+          <div class="brand-text">
+            <div class="title">RBAC Manager</div>
+            <div class="sub">Frontend-only</div>
+          </div>
+        </div>
+      </div>
+      <nav class="side-nav" id="sideNav">
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-footer">Demo • Data saved to localStorage</div>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button id="toggleSidebar" class="icon-btn" title="Toggle sidebar" aria-label="Toggle sidebar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#0b0e15" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round"></path>
+          </svg>
+        </button>
+        <div class="topbar-center">
+          <h1 id="pageTitle">Welcome</h1>
+        </div>
+        <div class="topbar-actions" id="nav">
+        </div>
+      </header>
+      <main id="app" class="container">
+      </main>
+      <footer class="footer">
+        <small>&copy; RBAC Demo — Frontend only</small>
+      </footer>
+    </div>
+  </div>
+  <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel card">
+      <h3 id="confirmTitle">Confirm action</h3>
+      <p id="confirmMessage">Are you sure?</p>
+      <div class="modal-actions">
+        <button class="btn ghost" id="confirmCancel">Cancel</button>
+        <button class="btn danger" id="confirmOk">Delete</button>
+      </div>
+    </div>
+  </div>
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
